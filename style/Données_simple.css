@@ -1,0 +1,20 @@
+.fond{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color:black;
+    overflow: hidden;
+}
+.graph{
+    margin-left: 50%;
+    position: absolute;
+    left: -298px;
+}
+g{
+    width: 596px;
+}
+text{
+    background-color: white;
+}

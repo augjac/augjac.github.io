@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style/Donn%C3%A9es_simple.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.js" crossorigin="anonymous" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+
+            /*$("#svpac rect").each(function( ) {
+                console.log($(this));
+            });*/
+
+            $("#svpac rect").each(function() {
+                var element=$(this);
+                var hauteur = element.attr("height");
+                element.attr("height", "0");
+                var pos = 0;
+                var id = setInterval(frame, 30);
+               function frame() {
+                   if (pos > hauteur) {
+                        console.log("fini!");
+                       clearInterval(id);
+                   } else {
+                       pos+=5;
+                       element.attr("height", ""+pos);
+                       element.attr("y", ""+(600-pos));
+                   }
+                    setTimeout(function(){
+                    var something = $("rect, #texte")
+                    .css("transition-duration", "1s")
+                    .show()    
+                    },2600);
+                
+                    setTimeout(function(){
+                    var something = $("#rect1")
+                    .css({fill: '#f6c238'})
+                    .show()    
+                    },2600);
+                   
+                    setTimeout(function(){
+                    var something = $("#rect2")
+                    .css({fill: '#16aca1'})
+                    .show()    
+                    },2600);
+                    setTimeout(function(){
+                    var something = $("#rect3")
+                    .css({fill: '#d44167'})
+                    .show()    
+                    },2600);
+                    setTimeout(function(){
+                    var something = $("#rect4")
+                    .css({fill: '#dc7730'})
+                    .show()    
+                    },2600);
+                    setTimeout(function(){
+                    var something = $("#rect5")
+                    .css({fill: '#f6c238'})
+                    .show()    
+                    },2600);
+                    setTimeout(function(){
+                    var something = $("#rect6")
+                    .css({fill: '#16aca1'})
+                    .show()    
+                    },2600);
+                    setTimeout(function(){
+                    var something = $("#rect7")
+                    .css({fill: '#d44167'})
+                    .show()    
+                    },2600);
+                    setTimeout(function(){
+                    var something = $("#texte")
+                    .css({opacity: 1})
+                    .show()    
+                    },2600);
+                    setTimeout(function(){
+                    var something = $("#value")
+                    .css({opacity: 0})  
+                    });
+                   }
+                $("rect").mouseenter(function(){
+        //...Couleur change au survol
+                $("rect").css("fill", "#2D2D2D");
+                $(this).css("fill", "#fff");
+            });
+
+    //Lorsque la souris ressort du div...
+                $("rect").mouseleave(function(){
+        //...On remet un fond coloré
+                $("#rect1").css("fill", "#f6c238");
+                $("rect").css("transition-duration", "1s");
+                $("#rect2").css("fill", "#16aca1");
+                $("#rect2").css("transition-duration", "1s");
+                $("#rect3").css("fill", "#d44167");
+                $("#rect3").css("transition-duration", "1s");
+                $("#rect4").css("fill", "#dc7730");
+                $("#rect4").css("transition-duration", "1s");
+                $("#rect5").css("fill", "#f6c238");
+                $("#rect5").css("transition-duration", "1s");
+                $("#rect6").css("fill", "#16aca1");
+                $("#rect6").css("transition-duration", "1s");
+                $("#rect7").css("fill", "#d44167");
+                $("#rect7").css("transition-duration", "1s");
+                
+    });
+                $("rect").click(function() {
+                    $(" #value ").css({opacity: 1});
+                    $("#value,rect").css("transition-duration", "1s");
+                });
+                
+});    
+                });
+
+        </script>
+        <style type="text/css">
+            .st0{fill:#1D1D1B;}
+            .st1{fill:#F6C238;}
+            .st2{fill:#10ABA1;}
+            .st3{fill:#D34167;}
+            .st4{fill:#DB7730;}
+            .st5{fill:#FFFFFF;}
+            .st6{font-family:'Arial';}
+            .st7{font-size:5.1745px;}
+            .st8{fill:#B08930;}
+            .st9{font-weight:700;}
+            .st10{letter-spacing:13;}
+	        .st11{font-size:18px;}
+            .st12{opacity: 0;}
+        </style>
+    </head>
+    <body>
+        <div class="fond">
+            <g class="graph">
+                <svg version="1.1" id="svpac" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                width="595.28px" height="841.89px" viewBox="0 0 595.28 841.89" enable-background="new 0 0 595.28 841.89" xml:space="preserve">
+                
+                <rect id="rect1" x="502.558" y="147" fill="#FFFFFF" width="56.365" height="425.003"/>
+                <rect id="rect2" x="424.261" y="206.302" fill="#FFFFFF" width="56.373" height="365.701"/>
+                <rect id="rect3" x="345.973" y="290.314" fill="#FFFFFF" width="56.368" height="281.689"/>
+                <rect id="rect4" x="267.68" y="354.557" fill="#FFFFFF" width="56.368" height="217.446"/>
+                <rect id="rect5" x="189.386" y="408.915" fill="#FFFFFF" width="56.371" height="163.083"/>
+                <rect id="rect6" x="111.093" y="458.337" fill="#FFFFFF" width="56.372" height="113.666"/>
+                <rect id="rect7" x="32.803" y="473.162" fill="#FFFFFF" width="56.369" height="98.841"/>
+                <g id="texte" class="st12">
+                    <g id="2010">
+                    <text transform="matrix(1 0 0 1 44 620)" class="st6 st5">2010</text>
+                    </g>
+                    <g id="2011">
+                    <text transform="matrix(1 0 0 1 125 620)" class="st6 st5">2011</text></g>
+                    <g id="2012">
+                    <text transform="matrix(1 0 0 1 203 620)" class="st6 st5">2012</text></g>
+                    <g id="2013">
+                    <text transform="matrix(1 0 0 1 281 620)" class="st6 st5">2013</text></g>
+                    <g id="2014">
+                    <text transform="matrix(1 0 0 1 358 620)" class="st6 st5">2014</text></g>
+                    <g id="2015">
+                    <text transform="matrix(1 0 0 1 436 620)" class="st6 st5">2015</text></g>
+                    <g id="2016">
+                    <text transform="matrix(1 0 0 1 514 620)" class="st6 st5">2016</text></g>
+
+                    <g id="titre">
+                    <text transform="matrix(1 0 0 1 173.0563 670)"><tspan x="0" y="0" class="st5 st6 st11 st9">NOMBRE D’ABONEES NETFLIX</tspan><tspan x="80" y="21.6" class="st11 st6 st5 st9">EN MILIONS</tspan></text></g>
+                </g>
+                <g id="value">
+                    <g id="20">
+                    <text x="42" y="520" class="st6">20.01</text>
+                    </g>
+                    <g id="23">
+                    <text x="120" y="505" class="st6">23.27</text>
+                    </g>
+                    <g id="33">
+                    <text x="198" y="456" class="st6">33.23</text>
+                    </g>
+                    <g id="44">
+                    <text x="276" y="400" class="st6">44.35</text>
+                    </g>
+                    <g id="57">
+                    <text x="354" y="335" class="st6">57.39</text>
+                    </g>
+                    <g id="74">
+                    <text x="434" y="250" class="st6">74.76</text>
+                    </g>
+                    <g id="86">
+                    <text x="510" y="190" class="st6">86.74</text>
+                    </g>
+                    
+                </g>
+                </svg>
+            </g>
+            
+        </div>
+    </body>
+</html>
