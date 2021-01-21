@@ -2,8 +2,18 @@ html,body{
     height: 100%;
     padding: 0;
     margin: 0;
+}
+body{
+    background-image: url(../medias/nuit%20%C3%A9toil%C3%A9e.JPG);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: #03071E;
-
+}
+@media only screen and (max-width: 767px) {
+    body {
+    background-image: url(../medias/nuit%20%C3%A9toil%C3%A9e.JPG);
+  }
 }
 h1,p,a,h3{
     text-align: center;
@@ -124,4 +134,41 @@ img{
     margin-bottom: 2vw;
     margin-right: 2vw;
     margin-left: 2vw;
+}
+div#slider{
+    width: 640px;
+    height: 360px;
+    max-width: 1000px;
+    overflow: hidden;
+    margin: auto;    
+    margin-bottom: 2vw;
+    
+}
+div#slider figure{
+    position: relative;
+    width: 600%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    text-align: left;
+    animation: 30s slidy infinite;
+}
+div#slider figure img{
+    width: 16.7%;
+    height: auto;
+    float: left;
+    margin: 0;
+}
+@keyframes slidy {
+    0%{ left: 0%; }
+    16%{ left: 0%; }
+    21%{ left: -100%;}
+    37%{ left: -100%;}
+    42%{ left: -200%;}
+    58%{ left: -200%;}
+    63%{ left: -300%;}
+    79%{ left: -300%;}
+    84%{ left: -400%;}
+    100%{ left: -400%;}
+    
 }

@@ -4,8 +4,15 @@ body{
     margin: 0;
     background-color: #03071E;
     text-align: center;
-
 }
+/*
+.bck{
+    background-image: url('medias/nuit étoilée.JPG');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+*/
 h1,p,a,h2,body{
     color: white;
     font-family: 'Montserrat', sans-serif;
