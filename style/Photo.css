@@ -1,0 +1,224 @@
+body{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #03071E;
+    text-align: center;
+}
+/*
+.bck{
+    background-image: url('medias/nuit étoilée.JPG');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+*/
+h1,p,a,h2,body{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+}
+p{
+    text-align: justify;
+    font-size: 1.2em;
+}
+h1{
+    text-align: center;
+    padding-top: 5%;
+}
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(3,7,30,0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 35%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #FFBA08;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #370617;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+.bouton-menu{
+    position: absolute;
+    top: 1.5%;
+    left: 2%;
+    overflow: visible;
+    z-index: 100;
+    padding: 10px;
+    color: white;
+}
+.gif{
+    margin-left: 6vw;
+    padding: 2%;
+    float: left;
+    width: 30vw;
+    height: 17.6vw;
+}
+.desc{
+    padding-top: 1%;
+    margin-left: 2%;
+    width: 30vw;
+    float: left;
+    padding-bottom: 15%;
+}
+main{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10vw;
+}
+footer {
+    background-color: #370617;
+    height: 14rem;
+    bottom: 0;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.medias{
+    padding-top: 5rem;
+    padding-bottom: 5rem;     
+}
+ul{
+    list-style: none;
+    flex-wrap: wrap;
+    margin-left: -.5rem;
+    margin-right: -.5rem;
+    text-align: center;
+}
+li{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    display: inline-block;
+}
+#images{
+    display: block;
+    width: 30vw;
+}
+div#slider {
+    width:80%;
+    max-width: 30vw;
+    overflow: hidden;
+    margin: auto;
+    padding-top: 5rem;
+}
+div#slider figure{
+    position: relative;
+    width: 200%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    text-align: left;
+    animation: 30s slidy infinite;
+}
+div#slider figure img{
+    width: 50%;
+    height: auto;
+    float: left;
+    
+}
+@keyframes slidy{
+    0%{left: 0%;}
+    10%{left: -100%;}
+    20%{left: 0%;}
+    30%{left: -100%;}
+    40%{left: 0%;}
+    50%{left: -100%;}
+    60%{left: 0%;}
+    70%{left: -100%;}
+    80%{left: 0%;}
+    90%{left: -100%;}
+    100%{left: 0%;}
+}
+form{
+    text-align: left;
+}
+input{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+}
+.message{
+    height: 10vh;
+}
+.envoyer{
+    background-color:#370617;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    border-radius: 5px;
+    font-size: 1.2em;
+    width: 10vw;
+    margin-left: 40vw;
+}
+input{
+    background-color: #370617;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    width: 50vw;
+    font-size: 1.2em;
+}
+form{
+    width: 60%;
+    margin: auto;
+}
+.photo{
+    margin-left: 6vw;
+    padding: 2%;
+    float: left;
+    width: 20vw;
+    opacity: 0.5;
+    border: 1px;
+    border-radius: 5px;
+}
+img {
+    margin-bottom: -7px;
+}
+
+.grid-photo-padding img{
+    margin-bottom: 12px;
+}
+.grid-photo{
+	margin-top: 8%;
+}
