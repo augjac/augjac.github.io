@@ -172,3 +172,30 @@ div#slider figure img{
     100%{ left: -400%;}
     
 }
+.audi {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    stroke-dasharray: 450;
+    stroke-dashoffset: 450;
+    animation: draw 2s linear infinite alternate;
+
+}
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+html::-webkit-scrollbar {
+      width: 10px; 
+   }
+html::-webkit-scrollbar-track {
+    background-color: #03071E;
+  }
+
+html::-webkit-scrollbar-thumb {
+    background: #FFBA08;
+    border-radius: 5px;
+  }
