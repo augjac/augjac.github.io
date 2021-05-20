@@ -212,3 +212,62 @@ form{
     border: 1px;
     border-radius: 5px;
 }
+div.gallery {
+margin: 1vw;
+}
+
+div.gallery:hover {
+  opacity: 0.2;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+button{
+    border: none;
+    background-color: #FFBA08; 
+    color: #03071E;
+    padding: 15px 32px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4vw 2vw;
+    cursor: pointer;
+}
