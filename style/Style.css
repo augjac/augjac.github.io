@@ -16,6 +16,10 @@ html::-webkit-scrollbar-thumb {
     background: #FFBA08;
     border-radius: 5px;
   }
+h2{
+    width: 100%;
+    margin-bottom: 4%;
+}
 h1,p,a,h2,body{
     color: white;
     font-family: 'Montserrat', sans-serif;
@@ -60,7 +64,7 @@ h1{
 }
 
 .overlay a:hover, .overlay a:focus {
-  color: #370617;
+  color: #d00000;
 }
 
 .overlay .closebtn {
@@ -95,6 +99,11 @@ h1{
     width: 30vw;
     height: 17.6vw;
 }
+.telgif{
+    margin-left: 12vw;
+    padding: 2%;
+    float: left;
+}
 .desc{
     padding-top: 1%;
     margin-left: 2%;
@@ -108,10 +117,10 @@ main{
     margin-bottom: 10vw;
 }
 footer {
-    background-color: #370617;
+    background-color: #050C33;
     height: 14rem;
     bottom: 0;
-    position: relative;
+    position: static;
     width: 100%;
     overflow: hidden;
 }
@@ -182,7 +191,7 @@ input{
     height: 10vh;
 }
 .envoyer{
-    background-color:#370617;
+    background-color:#082CFC;
     color: white;
     border: none;
     padding: 0.5rem;
@@ -194,7 +203,7 @@ input{
     margin-left: 40vw;
 }
 input{
-    background-color: #370617;
+    background-color: #082CFC;
     color: white;
     border: none;
     border-radius: 5px;
@@ -219,7 +228,7 @@ div.gallery {
 margin: 1vw;
 }
 
-div.gallery:hover {
+div.gallery, a:hover {
   opacity: 0.2;
 }
 
