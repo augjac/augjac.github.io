@@ -228,7 +228,7 @@ div.gallery {
 margin: 1vw;
 }
 
-div.gallery, a:hover {
+a:hover {
   opacity: 0.2;
 }
 
