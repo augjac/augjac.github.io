@@ -110,6 +110,11 @@ h1{
     width: 30vw;
     float: left;
     padding-bottom: 15%;
+}.desc1{
+    padding-top: 1%;
+    margin-left: 2%;
+    width: 30vw;
+    padding-bottom: 2%;
 }
 main{
     width: 80%;
