@@ -229,6 +229,13 @@ form{
     border: 1px;
     border-radius: 5px;
 }
+.photo2{
+    padding: 2%;
+    width: 15vw;
+    opacity: 1;
+    border: 1px;
+    border-radius: 5px;
+}
 div.gallery {
 margin: 1vw;
 }
@@ -244,6 +251,7 @@ div.gallery img {
 
 div.desc {
   padding: 15px;
+  margin-right: 20vw;
   text-align: center;
 }
 
@@ -287,4 +295,9 @@ button{
     font-size: 16px;
     margin: 4vw 2vw;
     cursor: pointer;
+}
+figcaption{
+    width: 15vw;
+    margin-left: 40%;
+    
 }
