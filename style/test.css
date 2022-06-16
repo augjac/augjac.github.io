@@ -15,7 +15,7 @@ html::-webkit-scrollbar-thumb {
     border-radius: 5px;
   }
 body{
-    background-image: url(../medias/Arc en ciel.jpg);
+    background-image: url(https://augjac.github.io/medias/Arc%20en%20ciel.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -23,7 +23,7 @@ body{
 }
 @media only screen and (max-width: 767px) {
     body {
-    background-image: url(../medias/Arc en ciel.jpg);
+    background-image: url(https://augjac.github.io/medias/Arc%20en%20ciel.jpg);
   }
 }
 h1,p,a,h3{
