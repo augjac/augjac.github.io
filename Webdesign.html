@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Augustin JACQUEL</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="style/Style.css">
+        <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="icon" href="medias/logo.ico"/>
+        <style> 
+            .loader{width: 100%; height: 100%; position: absolute; top:0; left: 0; background-color: #000000; display: flex; justify-content: center; align-items: center;}
+            .boussole{animation: spin 2s linear infinite;width: 200px; height: 200px;}
+            @keyframes spin {0% { transform: rotate(0deg); }100% { transform: rotate(360deg); }}
+        </style>
+        
+        <script>
+            $(window).on("load",function(){
+                $(".loader").fadeOut("slow");    
+            });
+        </script>
+        <script>
+                function openNav() {
+                    document.getElementById("myNav").style.height = "100%";
+                }
+
+                function closeNav() {
+                    document.getElementById("myNav").style.height = "0%";
+                }
+            </script>
+    </head>
+    <body>
+            <div class="loader">
+                <img class="boussole" src="medias/logo.png" alt="logo">
+            </div>
+            <span class="bouton-menu" style="font-size:30px;cursor:pointer;color:#FFBA08" onclick="openNav()">&#9776;</span>
+            <main>
+                <h1>Webdesign</h1>
+                <h2>Sites & maquette réalisé pour des clients</h2>
+                <div class="button">
+                    <a href="https://www.youtube.com/watch?v=5Bo-D2aoD5g"><button type="button" >Lien vers la publicité vidéo</button></a>
+                    <button type="button" onclick="playMusic()">Lien vers la publicité audio</button>                  
+                </div>              
+                <div class="responsive">
+                  <div class="gallery">
+                    <a target="_blank" href="medias/audi/Analyse%20support%20de%20com.jpg">
+                      <img src="medias/audi/Analyse%20support%20de%20com.jpg" alt="Analyse page 1" width="600" height="400">
+                    </a>
+                  </div>
+                </div>
+
+
+                <div class="responsive">
+                  <div class="gallery">
+                    <a target="_blank" href="medias/audi/Analyse%20support%20de%20com2.jpg">
+                      <img src="medias/audi/Analyse%20support%20de%20com2.jpg" alt="Analyse page 2" width="600" height="400">
+                    </a>
+                  </div>
+                </div>
+
+                <div class="responsive">
+                  <div class="gallery">
+                    <a target="_blank" href="medias/audi/Analyse%20support%20de%20com3.jpg">
+                      <img src="medias/audi/Analyse%20support%20de%20com3.jpg" alt="Analyse page 1" width="600" height="400">
+                    </a>
+                  </div>
+                </div>
+
+                <div class="responsive">
+                  <div class="gallery">
+                    <a target="_blank" href="medias/audi/Analyse%20support%20de%20com4.jpg">
+                      <img src="medias/audi/Analyse%20support%20de%20com4.jpg" alt="Analyse page 4" width="600" height="400">
+                    </a>
+                  </div>
+                </div>
+                
+                <div class="responsive">
+                  <div class="gallery">
+                    <a target="_blank" href="medias/audi/Analyse%20support%20de%20com5.jpg">
+                      <img src="medias/audi/Analyse%20support%20de%20com5.jpg" alt="Analyse page 5" width="600" height="400">
+                    </a>
+                  </div>
+                </div>
+                <div class="responsive">
+                  <div class="gallery">
+                    <a target="_blank" href="medias/audi/Analyse%20support%20de%20com6.jpg">
+                      <img src="medias/audi/Analyse%20support%20de%20com6.jpg" alt="Analyse page 6" width="600" height="400">
+                    </a>
+                  </div>
+                </div>
+                <div class="responsive">
+                  <div class="gallery">
+                    <a target="_blank" href="medias/audi/Analyse%20support%20de%20com7.jpg">
+                      <img src="medias/audi/Analyse%20support%20de%20com7.jpg" alt="Analyse page 7" width="600" height="400">
+                    </a>
+                  </div>
+                </div>
+                <div class="responsive">
+                  <div class="gallery">
+                    <a target="_blank" href="medias/audi/Analyse%20support%20de%20com8.jpg">
+                      <img src="medias/audi/Analyse%20support%20de%20com8.jpg" alt="Analyse page 8" width="600" height="400">
+                    </a>
+                  </div>
+                </div>
+                <div class="responsive">
+                  <div class="gallery">
+                    <a target="_blank" href="medias/audi/Analyse%20support%20de%20com9.jpg">
+                      <img src="medias/audi/Analyse%20support%20de%20com9.jpg" alt="Analyse page 9" width="600" height="400">
+                    </a>
+                  </div>
+                </div>
+
+            </main>
+            <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="A%20propos.html">&Agrave; propos</a>
+                <a href="index.html">Projets</a>
+                <a href="Contact.html">Contact</a>
+            </div>
+        </div>
+        <footer>
+            <div class="medias">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/augustin-jacquel"><img src="medias/social/linkedin.png" alt="Linkedin logo"></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCLsq03tmVhuRY-VeEt8p7TA"><img src="medias/social/youtube.png" alt="Youtube logo"></a></li>
+                    <li><a href="https://www.instagram.com/augjac88/"><img src="medias/social/Insta.png" alt="Instagram logo"></a></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>
